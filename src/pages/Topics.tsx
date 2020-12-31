@@ -4,19 +4,19 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 import Topic from "../components/Topic";
 
-const Heading = tw.h2`text-blue-500 text-2xl p-2`;
+const Heading = tw.h2`text-black font-bold text-4xl p-2`;
 
 function Topics() {
   let match = useRouteMatch();
 
   return (
-    <div>
+    <div tw="flex-col text-center">
       <Heading>Topics</Heading>
       <ul>
-        <li>
+        <li tw="hover:font-bold">
           <Link to={`${match.url}/components`}>Components</Link>
         </li>
-        <li>
+        <li tw="hover:font-bold">
           <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
         </li>
       </ul>
@@ -30,7 +30,7 @@ function Topics() {
           <Topic />
         </Route>
         <Route path={match.path}>
-          <h3>Please select a topic.</h3>
+          <h3 tw="text-green-500 font-bold p-2">Please select a topic.</h3>
         </Route>
       </Switch>
     </div>

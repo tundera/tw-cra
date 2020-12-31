@@ -7,8 +7,8 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Topics from "../pages/Topics";
 
-const Heading = tw.h1`text-blue-500 text-2xl p-2`;
-const BigHeading = tw(Heading)`text-4xl`;
+const Heading = tw.h1`flex justify-center text-blue-500 text-2xl p-2`;
+const BigHeading = tw(Heading)`text-8xl`;
 const Container = tw.div`max-w-4xl mx-auto p-5 mt-5`;
 
 const state = proxy({ count: 0, title: "Big Heading" });
@@ -22,7 +22,7 @@ function App() {
       <Router>
         <div>
           <nav>
-            <ul>
+            <ul tw="flex justify-center text-red-500 text-2xl space-x-8 p-8">
               <li>
                 <Link to="/">Home</Link>
               </li>
