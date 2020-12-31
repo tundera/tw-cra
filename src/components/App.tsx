@@ -11,7 +11,7 @@ const Heading = tw.h1`flex justify-center text-blue-500 text-2xl p-2`;
 const BigHeading = tw(Heading)`text-8xl`;
 const Container = tw.div`max-w-4xl mx-auto p-5 mt-5`;
 
-const state = proxy({ count: 0, title: "Big Heading" });
+const state = proxy({ count: 0, title: "Tailwind Demo" });
 
 function App() {
   const snapshot = useProxy(state);
