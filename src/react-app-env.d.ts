@@ -1,5 +1,6 @@
 /// <reference types="react-scripts" />
 
+// Twin Macro support
 import "twin.macro";
 import styledImport from "@emotion/styled";
 import { css as cssImport } from "@emotion/react";
