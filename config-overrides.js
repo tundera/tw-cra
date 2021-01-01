@@ -11,6 +11,7 @@ module.exports = override(
         "@styles": "./src/styles",
         "@utils": "./src/utils",
         "@images": "./src/assets/images",
+        "@fonts": "./src/assets/fonts",
       },
     },
   ])
